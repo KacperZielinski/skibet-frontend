@@ -8,7 +8,7 @@ function SimpleRest() {
     let headers = new Headers();
     let username = "kacper"
     let password = ""
-    let url = "http://localhost:8443/api"
+    let url = "/api"
 
     headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
 
