@@ -1,7 +1,8 @@
 var CACHE_NAME = 'skibet';
 var urlsToCache = [
     '/',
-    '/completed'
+    '/simplerest',
+    '/test'
 ];
 
 // Install a service worker
@@ -33,7 +34,7 @@ self.addEventListener('fetch', event => {
 
 // Update a service worker
 self.addEventListener('activate', event => {
-    var cacheWhitelist = ['pwa-task-manager'];
+    var cacheWhitelist = ['skibet'];
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
