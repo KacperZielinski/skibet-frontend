@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import SimpleRest from './components/SimpleRest';
 import Test from './components/Test';
+import Attribution from "./components/Attribution";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
               <Route path='/simplerest' exact component={SimpleRest} />
               <Route path='/test' exact component={Test} />
           </Switch>
+          <Attribution />
       </BrowserRouter>
   );
 }
