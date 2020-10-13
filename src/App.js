@@ -4,7 +4,7 @@ import './App.css';
 import SimpleRest from './components/SimpleRest';
 import Test from './components/Test';
 import Footer from './components/Footer';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import Login from './components/Login';
 import Register from './components/Register';
 import WelcomePage from './components/WelcomePage';
@@ -17,7 +17,7 @@ import HistoryTable from "./components/HistoryTable";
 function App() {
   return (
       <BrowserRouter>
-          <Header />
+          <NavBar />
           <WelcomePage />
           <Login />
           <Register />
