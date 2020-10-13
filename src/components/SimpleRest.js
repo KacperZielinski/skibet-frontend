@@ -7,16 +7,15 @@ function SimpleRest() {
 
     let headers = new Headers();
     let username = "kacper"
-    let password = ""
-    let url = "/api"
+    let password = "password"
+    let url = "http://localhost:8443/"
 
     headers.set('Authorization', 'Basic ' + btoa(username + ":" + password));
 
     useEffect(() => {
         fetch(url, {
-            method:'GET',
+            method: 'GET',
             headers: headers,
-            //credentials: 'user:passwd'
         })
             .then(res => res.json())
             .then(

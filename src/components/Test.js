@@ -1,8 +1,22 @@
 import React from 'react'
+import {BrowserRouter, Link} from 'react-router-dom'
 
 function Test() {
     return (
-        <div>TEST</div>
+        <>
+            <div className="App">
+                <h1>Result is: </h1>
+            </div>
+            <Link to='/simplerest'>
+                <button>Rest</button>
+            </Link>
+            <Link to='/test'>
+                <button>Test</button>
+            </Link>
+            <Link to='/'>
+                <button>Clear</button>
+            </Link>
+        </>
     )
 }
 
